@@ -1,4 +1,6 @@
+import React from "react";
 import logo from './logo.svg';
+import Componente from "./components/Componente";
 import './App.css';
 
 function App() {
@@ -6,6 +8,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <label htmlFor="nombre">Nombre</label>
+        <input type="text" id="nombre"></input>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -18,6 +22,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <section>
+        <Componente msg="Hola soy un componente desde una prop"></Componente> 
+      </section>
     </div>
   );
 }
